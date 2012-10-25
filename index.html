@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Variations Mockup</title>
+
+  <!-- This is a special version of jQuery with RequireJS built-in -->
+  <script data-main="scripts/main" src="scripts/require-jquery.js"></script>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="collapsible.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div id="content-wrapper">
+    <h1 class="documentFirstHeading">Plone T-Shirt</h1><br>
+
+    <!-- Variations Configuration Panel -->
+    <div id="variations-config-panel" class="pat-collapsible variation-config rounded-large">
+      <h2 class="panel-header">Variations Configuration</h2>
+
+      <div class="panel-content">
+        <form id="attributes-form" method="post" action="#" name="attributes-form">
+          <div id="attributes">
+            <div class="attribute pat-collapsible closed rounded-large">
+              <div class="attribute-header panel-header">
+
+                <a class="btn-remove-attr btn btn-mini btn-danger" href="#">
+                  <i class="icon-remove"></i>&nbsp;Remove Attribute
+                </a>
+
+                <h2>Attribute 1</h2>
+                <span class="input-prepend">
+                  <span class="add-on"><i class="icon-tag"></i></span>
+                  <input class="span3" type="text" value="Color">
+                </span>
+              </div>
+
+              <div class="attribute-body panel-content" style="display: none;">
+                <div class="variants">
+                  <table class="table table-condensed">
+                    <tr>
+                      <td>
+                        <span class="input-prepend">
+                          <span class="add-on"><i class="icon-list"></i></span>
+                          <input class="span3" type="text" value="Red">
+                        </span>
+                      </td>
+
+                      <td>
+                        <a class="btn btn-mini" href="#"><i class="icon-remove"></i></a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="input-prepend">
+                          <span class="add-on"><i class="icon-list"></i></span>
+                          <input class="span3" type="text" value="Green">
+                        </span>
+                      </td>
+
+                      <td>
+                        <a class="btn btn-mini" href="#"><i class="icon-remove"></i></a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="input-prepend">
+                          <span class="add-on"><i class="icon-list"></i></span>
+                          <input class="span3" type="text" value="Blue">
+                        </span>
+                      </td>
+
+                      <td>
+                        <a class="btn btn-mini" href="#"><i class="icon-remove"></i></a>
+                      </td>
+                    </tr>
+                  </table>
+                  <a class="btn btn-mini btn-success" href="#">
+                    <i class="icon-plus"></i>&nbsp;Add Variant
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="attribute pat-collapsible closed rounded-large">
+              <div class="attribute-header panel-header">
+                <a class="btn-remove-attr btn btn-mini btn-danger" href="#">
+                  <i class="icon-remove"></i>&nbsp;Remove Attribute
+                </a>
+
+                <h2>Attribute 2</h2>
+                <span class="input-prepend">
+                  <span class="add-on"><i class="icon-tag"></i></span>
+                  <input class="span3" type="text" value="Size">
+                </span>
+              </div>
+
+              <div class="attribute-body panel-content" style="display: none;">
+                <div class="variants">
+                  <table class="table table-condensed">
+                    <tr>
+                      <td>
+                        <span class="input-prepend">
+                          <span class="add-on"><i class="icon-list"></i></span>
+                          <input class="span3" type="text" value="Small">
+                        </span>
+                      </td>
+
+                      <td>
+                        <a class="btn btn-mini" href="#"><i class="icon-remove"></i></a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="input-prepend">
+                          <span class="add-on"><i class="icon-list"></i></span>
+                          <input class="span3" type="text" value="Medium">
+                        </span>
+                      </td>
+
+                      <td>
+                        <a class="btn btn-mini" href="#"><i class="icon-remove"></i></a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="input-prepend">
+                          <span class="add-on"><i class="icon-list"></i></span>
+                          <input class="span3" type="text" value="Large">
+                        </span>
+                      </td>
+
+                      <td>
+                        <a class="btn btn-mini" href="#"><i class="icon-remove"></i></a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="input-prepend">
+                          <span class="add-on"><i class="icon-list"></i></span>
+                          <input class="span3" type="text" value="Extra Large">
+                        </span>
+                      </td>
+
+                      <td>
+                        <a class="btn btn-mini" href="#"><i class="icon-remove"></i></a>
+                      </td>
+                    </tr>
+                  </table>
+                  <a class="btn btn-mini btn-success" href="#">
+                    <i class="icon-plus"></i>&nbsp;Add Variant
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div style="clear: both;"></div>
+        <span class="add-attribute">
+          <a class="btn btn-small btn-success" href="#">
+            <i class="icon-plus"></i>&nbsp;Add Attribute
+          </a>
+        </span>
+      </div>
+    </div>
+
+    <!-- Combinations Panel -->
+    <div id="combinations-panel" class="pat-collapsible open">
+      <h2 class="panel-header">Combinations</h2>
+      <div class="panel-content">
+        <form id="variations" method="post" action="#" name="variations">
+
+          <div class="pat-collapsible rounded-large">
+            <h2 class="panel-header variant-label">Red</h2>
+            <div class="panel-content">
+              <table class="table table-striped table-bordered table-hover table-condensed">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Price</th>
+                    <th>SKU code <span class="required" title="Required" style="color: rgb(255, 0, 0);">■</span></th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="variant-label">Small</td>
+                    <td><input name="var-0-0-active" checked="checked" type="checkbox"></td>
+                    <td><input name="var-0-0-price" class="number" size="4" value="0.0" type="text"></td>
+                    <td><input name="var-0-0-skucode" class="required uniqueSkuCode" size="10" value="24.10" type="text"></td>
+                    <td><input name="var-0-0-description" value="" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Medium</td>
+                    <td><input name="var-0-1-active" type="checkbox"></td>
+                    <td><input name="var-0-1-price" class="number" size="4" value="0.00" type="text"></td>
+                    <td><input name="var-0-1-skucode" class="required uniqueSkuCode" size="10" value="24.xx" type="text"></td>
+                    <td><input name="var-0-1-description" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Large</td>
+                    <td><input name="var-0-2-active" type="checkbox"></td>
+                    <td><input name="var-0-2-price" class="number" size="4" value="0.00" type="text"></td>
+                    <td><input name="var-0-2-skucode" class="required uniqueSkuCode" size="10" value="24.xx" type="text"></td>
+                    <td><input name="var-0-2-description" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Extra Large</td>
+                    <td><input name="var-0-3-active" checked="checked" type="checkbox"></td>
+                    <td><input name="var-0-3-price" class="number" size="4" value="0.0" type="text"></td>
+                    <td><input name="var-0-3-skucode" class="required uniqueSkuCode" size="10" value="24.09" type="text"></td>
+                    <td><input name="var-0-3-description" value="" type="text"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="pat-collapsible rounded-large">
+            <h2 class="panel-header variant-label">Green</h2>
+            <div class="panel-content">
+              <table class="table table-striped table-bordered table-hover table-condensed">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Price</th>
+                    <th>SKU code <span class="required" title="Required" style="color: rgb(255, 0, 0);">■</span></th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="variant-label">Small</td>
+                    <td><input name="var-1-0-active" type="checkbox"></td>
+                    <td><input name="var-1-0-price" class="number" size="4" value="0.00" type="text"></td>
+                    <td><input name="var-1-0-skucode" class="required uniqueSkuCode" size="10" value="24.xx" type="text"></td>
+                    <td><input name="var-1-0-description" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Medium</td>
+                    <td><input name="var-1-1-active" type="checkbox"></td>
+                    <td><input name="var-1-1-price" class="number" size="4" value="0.00" type="text"></td>
+                    <td><input name="var-1-1-skucode" class="required uniqueSkuCode" size="10" value="24.xx" type="text"></td>
+                    <td><input name="var-1-1-description" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Large</td>
+                    <td><input name="var-1-2-active" checked="checked" type="checkbox"></td>
+                    <td><input name="var-1-2-price" class="number" size="4" value="0.0" type="text"></td>
+                    <td><input name="var-1-2-skucode" class="required uniqueSkuCode" size="10" value="24.08" type="text"></td>
+                    <td><input name="var-1-2-description" value="" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Extra Large</td>
+                    <td><input name="var-1-3-active" type="checkbox"></td>
+                    <td><input name="var-1-3-price" class="number" size="4" value="0.00" type="text"></td>
+                    <td><input name="var-1-3-skucode" class="required uniqueSkuCode" size="10" value="24.xx" type="text"></td>
+                    <td><input name="var-1-3-description" type="text"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="pat-collapsible rounded-large">
+            <h2 class="panel-header variant-label">Blue</h2>
+            <div class="panel-content">
+              <table class="table table-striped table-bordered table-hover table-condensed">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Price</th>
+                    <th>SKU code <span class="required" title="Required" style="color: rgb(255, 0, 0);">■</span></th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="variant-label">Small</td>
+                    <td><input name="var-2-0-active" checked="checked" type="checkbox"></td>
+                    <td><input name="var-2-0-price" class="number" size="4" value="0.0" type="text"></td>
+                    <td><input name="var-2-0-skucode" class="required uniqueSkuCode" size="10" value="24.07" type="text"></td>
+                    <td><input name="var-2-0-description" value="" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Medium</td>
+                    <td><input name="var-2-1-active" type="checkbox"></td>
+                    <td><input name="var-2-1-price" class="number" size="4" value="0.00" type="text"></td>
+                    <td><input name="var-2-1-skucode" class="required uniqueSkuCode" size="10" value="24.xx" type="text"></td>
+                    <td><input name="var-2-1-description" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Large</td>
+                    <td><input name="var-2-2-active" type="checkbox"></td>
+                    <td><input name="var-2-2-price" class="number" size="4" value="0.00" type="text"></td>
+                    <td><input name="var-2-2-skucode" class="required uniqueSkuCode" size="10" value="24.xx" type="text"></td>
+                    <td><input name="var-2-2-description" type="text"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="variant-label">Extra Large</td>
+                    <td><input name="var-2-3-active" type="checkbox"></td>
+                    <td><input name="var-2-3-price" class="number" size="4" value="0.00" type="text"></td>
+                    <td><input name="var-2-3-skucode" class="required uniqueSkuCode" size="10" value="24.xx" type="text"></td>
+                    <td><input name="var-2-3-description" type="text"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <input name="form.button.save" value="Save" type="submit" class="btn btn-primary">
+            <input name="form.button.cancel" value="Cancel" type="submit" class="btn">
+          </div>
+
+          <input name="form.submitted:boolean" value="True" type="hidden">
+        </form>
+
+      </div> <!-- / #combinations-panel .panel-content -->
+    </div> <!-- / #combinations-panel -->
+  </div> <!-- / #content-wrapper -->
+</body>
+</html>

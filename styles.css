@@ -1,0 +1,110 @@
+/* --- General styling -------------------------- */
+body {
+    background-color: #222222 !important;
+    padding-top: 0;
+}
+
+h2 {
+    font-size: 110% !important;
+}
+
+.rounded-large {
+    border-radius: 8px 8px 8px 8px;
+}
+
+.btn-mini {
+    margin-top: 0.5em;
+}
+
+
+/* --- Page layout ------------------------------ */
+#content-wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: 1px solid #BBBBBB;
+    background-color: #EEEEEE;
+    /*background-color: grey;*/
+}
+
+
+/* --- Panels  ---------------------------------- */
+.pat-collapsible {
+    margin-bottom: 2em;
+    -webkit-box-shadow: 5px 5px 6px 0px #AAA;
+}
+
+.panel-header {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.pat-collapsible > .panel-header {
+    /* border: 1px solid blue !important; */
+    margin-bottom: 0; /* Override in collapsible.css? */
+    border-radius: 8px 8px 0px 0px;
+}
+
+.pat-collapsible.closed > .panel-header {
+    /* border: 1px solid blue !important; */
+    margin-bottom: 0; /* Override in collapsible.css? */
+    border-radius: 8px 8px 8px 8px;
+}
+.pat-collapsible > .panel-content {
+    border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+    margin-top: 0; /* Override in collapsible.css? */
+    border-radius: 0px 0px 8px 8px;
+    background-color: #EBEBEB;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+/* --- Attribute Panel -------------------------- */
+.attribute {
+    margin: 1em
+}
+
+.btn-remove-attr {
+    float: right;
+}
+
+.attribute-header input {
+  font-weight: bold;
+}
+
+.attribute-header {
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+.attribute-header > h2 {
+    display: inline;
+    margin-top:0;
+    margin-bottom: 0;
+    padding-top:0;
+    line-height:25px;
+    margin-right: 1em
+}
+
+.attribute-header .input-append input, .attribute-header  .input-prepend input,
+.attribute-header .input-append .add-on, .attribute-header  .input-prepend .add-on {
+    font-size: 14px !important;
+    height: 14px;
+    line-height: 14px;
+}
+
+/* --- Misc ------------------------------------- */
+
+.variants {
+    padding:0.5em; margin-bottom: 0.5em;
+}
+
+.form-actions {
+    background-color: transparent !important;
+}
+
+
